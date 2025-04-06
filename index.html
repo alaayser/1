@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="علاء ياسر - مبرمج وخبير ميديا باينج يقدم حلول رقمية مبتكرة تشمل البرمجة، الإعلانات، التصميم، وكتابة المحتوى.">
+<meta name="author" content="علاء ياسر">
+<meta name="keywords" content="برمجة, ميديا باير, تصميم مواقع, إعلانات ممولة, كتابة محتوى, تسويق رقمي, علاء ياسر, تطوير مواقع, تصميم إعلانات, تصميم سوشيال ميديا">
+<meta property="og:title" content="بورتفوليو علاء ياسر - مبرمج وميديا باير">
+<meta property="og:description" content="تعرف على خدماتي في تصميم المواقع، إدارة الإعلانات، كتابة المحتوى، وتصميم الجرافيك بجودة عالية ونتائج فعلية.">
+<meta property="og:image" content="logo.png">
+<meta property="og:url" content="https://github.com/alaayser/1/">
+<meta property="og:type" content="website">
+  <title>علاء ياسر</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="welcomeMessage()">
+
+  <header>
+    <nav>
+      <div class="logo-box">
+        <img src="logo.png" alt="لوجو" class="logo-img" />
+        <span class="logo-text">علاء ياسر</span>
+      </div>
+      <div class="burger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="services.html">الخدمات</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>أهلاً بيك، انا علاء</h1>
+
+      <h2> مبرمج وميديا باير </h2>
+     <p> بدير الحملات وبصمم واكتب المحتوى بخبرة متعددة المجالات</p>
+ <a href="services.html" class="btn">شوف خدماتي</a>
+      <a href="https://wa.me/201025752676" target="_blank" class="btn">تواصل على واتساب</a>
+    </div>
+  </section>
+</main>
+  <footer>
+    <div class="social">
+      <a href="https://www.facebook.com/share/167MFZUu6C/?mibextid=wwXIfr">فيسبوك</a> | 
+      <a href="https://wa.me/201025752676">وتس اب</a> 
+    </div>
+    <p>© 2025 علاء ياسر. كل الحقوق محفوظة.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+
+    function welcomeMessage() {
+      alert("أهلاً بيك في موقعي! شوف خدماتي وراسلني لو مهتم بأي حاجة.");
+    }
+  </script>
+<script>
+  window.onload = function () {
+    document.getElementById("welcome-popup").style.display = "flex";
+  }
+
+  function closePopup() {
+    document.getElementById("welcome-popup").style.display = "none";
+  }
+</script>
+<div id="welcome-popup" class="popup">
+  <div class="popup-content">
+    <h2>أهلًا بيك في موقعي!</h2>
+    <p>أنا علاء، مبرمج وميديا باير . استمتع بتصفح خدماتي واطلب اللي يناسبك!</p>
+    <button onclick="closePopup()">يلا نشوف</button>
+  </div>
+</div>
+</body>
+</html>

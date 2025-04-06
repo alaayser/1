@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>برمجة مواقع</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo-box">
+        <img src="logo.png" alt="لوجو" class="logo-img" />
+        <span class="logo-text">علاء ياسر</span>
+      </div>
+      <div class="burger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="services.html">الخدمات</a></li>
+     
+      </ul>
+    </nav>
+  </header>
+
+  <section class="service-details">
+    <h2>برمجة مواقع</h2>
+    <p>ببرمج مواقع ومتارج احترافية وسريعة، متوافقة مع كل الأجهزة ومحسنة لمحركات البحث (SEO)، سواء مواقع شخصية أو للشركات بسلمك الموقع في بحث جوجل</p>
+
+    <h3>أعمال سابقة:</h3>
+    <div class="projects">
+      <div class="project">
+        <img src="1.jpg" alt="موقع مزرعة بيت شاتر" />
+        <h4>موقع مزرعة بيت شلتر</h4>
+        
+        <a href="https://pitsltter.github.io/-/" class="btn" target="_blank">شوف الموقع</a>
+      </div>
+ <div class="project">
+        <img src="2.jpg" alt="موقع لشركه وديان" />
+        <h4>موقع شركه وديان </h4>
+        
+        <a href="https://widya-n.github.io/e/" class="btn" target="_blank">شوف الموقع</a>
+      </div>
+      <div class="project">
+        <img src="3.jpg" alt="موقع شركه هندسيه" />
+        <h4>موقع شركه فيصل للهندسه</h4>
+        
+        <a href="https://alfaisalengineering.com" class="btn" target="_blank">شوف الموقع</a>
+      </div>
+<div class="project">
+        <img src="4.jpg" alt="موقع بورتفليو " />
+        <h4>موقع بورتفوليو شخصي </h4>
+        
+        <a href="https://github.com/alaayser/1/" class="btn" target="_blank">شوف الموقع</a>
+      </div>
+    </div>
+
+    
+
+    <div style="margin-top: 30px; text-align: center;">
+      <a href="https://wa.me/201025752676" class="btn" target="_blank">تواصل على واتساب</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social">
+      <a href="https://www.facebook.com/share/1Mmcp4Zknw/?mibextid=wwXIfr">فيسبوك</a> | 
+      <a href="https://wa.me/201025752676">واتس اب</a> | 
+      
+    </div>
+    <p>© 2025 علاء ياسر. كل الحقوق محفوظة.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
